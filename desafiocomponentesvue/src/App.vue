@@ -67,7 +67,7 @@ ul {
 }
 
 img {
-  border: 1px solid green;
+  border: 2px solid green;
   height: 50px;
   width: 50px;
   border-radius: 50%;
