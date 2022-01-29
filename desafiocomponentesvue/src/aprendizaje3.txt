@@ -1,0 +1,29 @@
+Html
+=====
+<li v-for="(character, i) in characters" :key="i">
+<img :src="getImageMethod(character)"/>
+<p>{{ character.name }}</p>
+
+Script
+======
+data() {
+return {
+characters: [
+{
+id: 160,
+name: "Hunter's Father",
+},
+{
+id: 676,
+name: "Japheth's Middle Son",
+},
+
+],
+};
+},
+
+methods: {
+getImageMethod(character) {
+return `https://rickandmortyapi.com/api/character/avatar/${character.id}.jpeg`;
+},
+}
